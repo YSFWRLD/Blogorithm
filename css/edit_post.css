@@ -1,0 +1,82 @@
+/* Edit Post Form Styles */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #2D3748; /* Primary text color */
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #A0AEC0; /* Gray border */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #38B2AC; /* Teal for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+.error-message {
+    color: #e53e3e; /* Red for error messages */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: #38B2AC; /* Teal for success messages */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Style the file input to make it look better */
+input[type="file"] {
+    font-size: 14px;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #A0AEC0; /* Gray border */
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #38B2AC; /* Teal on hover */
+    background-color: #eaf4e1;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #38B2AC; /* Teal on focus */
+    background-color: #f1f1f1;
+}

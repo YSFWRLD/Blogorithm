@@ -1,0 +1,74 @@
+/* post.css */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.post-main {
+    flex: 0 1 70%; /* Main post content takes 70% of the width */
+    max-width: 70%;
+}
+
+.sidebar {
+    flex: 0 1 28%; /* Sidebar takes 28% of the width */
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 1em;
+    color: #A0AEC0; /* Gray for meta text */
+    margin-bottom: 20px;
+}
+
+.post-content {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #2D3748; /* Dark text color */
+}
+
+.post-image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.related-posts {
+    margin-top: 40px;
+}
+
+.related-posts h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4A5568; /* Heading color */
+}
+
+.related-posts .related-post {
+    margin-bottom: 10px;
+}
+
+.related-posts .related-post a {
+    color: #38B2AC; /* Teal for related post links */
+    text-decoration: none;
+}
+
+.related-posts .related-post a:hover {
+    text-decoration: underline;
+}

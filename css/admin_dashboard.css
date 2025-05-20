@@ -1,0 +1,241 @@
+/* Admin Dashboard Styles */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: #FFFFFF; /* White background for cards */
+    border: 1px solid #A0AEC0; /* Light gray border */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4A5568; /* Dark text color for titles */
+}
+
+.stat-card p {
+    font-size: 24px;
+    margin: 0;
+    color: #2D3748; /* Dark text for numbers/statistics */
+}
+
+/* Recent Posts Styles */
+.recent-posts {
+    margin-top: 40px;
+}
+
+.recent-posts h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #38B2AC; /* Teal for section headings */
+}
+
+.recent-posts .post {
+    background-color: #FFFFFF; /* White background for posts */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-posts .post h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #4A5568; /* Heading color */
+    text-decoration: none;
+}
+
+.recent-posts .post p {
+    font-size: 14px;
+    color: #888; /* Gray text for post description */
+}
+
+.recent-posts .post .post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px; /* Increase space between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.recent-posts .post .post-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recent-posts .post .edit-button {
+    background-color: #38B2AC; /* Teal for edit button */
+    color: white;
+}
+
+.recent-posts .post .edit-button:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+.recent-posts .post .delete-button {
+    background-color: #F44336; /* Red for delete button */
+    color: white;
+}
+
+.recent-posts .post .delete-button:hover {
+    background-color: #E53935; /* Darker red on hover */
+}
+
+/* User Management Styles */
+.user-management {
+    margin-top: 40px;
+}
+
+.user-management h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #38B2AC; /* Teal for section headings */
+}
+
+.user-card {
+    background-color: #FFFFFF; /* White background for user cards */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #4A5568; /* Heading color */
+}
+
+.user-card p {
+    font-size: 14px;
+    color: #888; /* Gray text for user details */
+}
+
+.user-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.user-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-actions .edit-button {
+    background-color: #38B2AC; /* Teal for edit button */
+    color: white;
+}
+
+.user-actions .edit-button:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+.user-actions .delete-button {
+    background-color: #F44336; /* Red for delete button */
+    color: white;
+}
+
+.user-actions .delete-button:hover {
+    background-color: #E53935; /* Darker red on hover */
+}
+
+/* Form Styles for Edit, Delete Pages */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for forms */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #2D3748; /* Primary text color */
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #A0AEC0; /* Gray border */
+    font-size: 16px;
+}
+
+form button {
+    background-color: #38B2AC; /* Teal for submit button */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+/* Button Styling for Edit, Delete */
+button,
+a.button {
+    background-color: #38B2AC; /* Teal for buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    display: inline-block;
+}
+
+button:hover,
+a.button:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+button.delete-button,
+a.delete-button {
+    background-color: #F44336; /* Red for delete buttons */
+}
+
+button.delete-button:hover,
+a.delete-button:hover {
+    background-color: #E53935; /* Darker red on hover */
+}
+
+/* Specific Styles for Error and Success Messages */
+.error-message {
+    color: #F44336; /* Red for error messages */
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: #38B2AC; /* Teal for success messages */
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}

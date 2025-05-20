@@ -1,0 +1,303 @@
+/* Global Styles */
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #F7FAFC; /* Light background */
+    color: #2D3748; /* Dark neutral text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+html {
+    height: 100%;
+}
+
+/* Main Content Styles */
+main {
+    flex-grow: 1; /* Allow main content to take available space */
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #4A5568; /* Dark header background */
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #A0AEC0; /* Gray for links */
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #2D3748; /* Dark text color on hover */
+}
+
+/* Blog List Styles */
+#blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #FFFFFF; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Remove link styling inside cards */
+.card-content a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the parent text color */
+}
+
+/* Optional hover effect for links inside cards */
+.card-content a:hover {
+    color: inherit; /* Keep the text color on hover */
+}
+
+
+.card-content .category {
+    display: inline-block;
+    background-color: #38B2AC; /* Teal for category */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card-content h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #4A5568;
+    margin-bottom: 20px;
+}
+
+.card-content a.btn {
+    display: inline-block;
+    background-color: #38B2AC; /* Teal for buttons */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.card-content a.btn:hover {
+    background-color: #2D3748; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A5568; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Pushes footer to the bottom */
+    width: 100%; /* Ensures the footer spans the entire width */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Login Page */
+.login-page {
+    background-color: #F7FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #4A5568;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-container label {
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.login-container input {
+    padding: 10px;
+    border: 1px solid #A0AEC0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-container input:focus {
+    border-color: #38B2AC;
+    outline: none;
+}
+
+.login-container .btn {
+    padding: 10px;
+    background-color: #38B2AC;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container .btn:hover {
+    background-color: #319795;
+}
+
+.login-container .error-message {
+    color: #e53e3e;
+    text-align: center;
+}
+
+.login-container p {
+    text-align: center;
+    color: #2D3748;
+}
+
+.login-container p a {
+    color: #38B2AC;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Register Page Styles */
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.register-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-container .error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.register-container form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.register-container form button {
+    padding: 10px;
+    background-color: #38B2AC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-container form button:hover {
+    background-color: #319795;
+}
+
+.register-container form a {
+    text-decoration: none;
+    color: #38B2AC;
+}
+
+.register-container form a:hover {
+    text-decoration: underline;
+}

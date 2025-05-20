@@ -1,0 +1,103 @@
+/* General Styling for the new post page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F7FAFC; /* Soft background color */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4A5568; /* Heading color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2D3748; /* Primary text color */
+}
+
+input[type="text"], textarea, input[type="file"] {
+    padding: 10px;
+    border: 1px solid #A0AEC0; /* Gray border */
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #38B2AC; /* Teal button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #319795; /* Darker teal on hover */
+}
+
+.error-message {
+    color: #e53e3e; /* Red for error messages */
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling the file upload input */
+input[type="file"] {
+    padding: 6px 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+input[type="file"]:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+
+    label, input, textarea {
+        font-size: 12px;
+    }
+}
