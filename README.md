@@ -1,71 +1,85 @@
-
 # Blogorithm
 
-Blogorithm is a web-based blog management system built using **PHP**, **MySQL**, **HTML**, and **CSS**. It enables users to create, edit, and manage blog posts while providing an admin panel for user management and content control.
+A traditional server-rendered blog management system built with PHP, MySQL,
+HTML, CSS, and vanilla JavaScript. It includes user authentication, post
+management, and an administrator dashboard for managing users and content.
 
-## 🌐 Live Preview
+## Features
 
-*To run locally, follow the setup instructions below using XAMPP or any local server.*
+- User registration, sign-in, sign-out, and password changes
+- Password hashing and verification with PHP's password API
+- Create, edit, view, and delete blog posts
+- User and administrator roles
+- Admin dashboards for users and posts
+- MySQL schema and sample content
+- Session-based authentication
 
-## 🚀 Features
+## Requirements
 
-- ✅ User Registration & Login
-- 📝 Create, Edit, and Delete Blog Posts
-- 🔐 Admin Dashboard for Managing Users and Posts
-- 🎨 Clean UI with Custom CSS Styling
-- 📦 MySQL Database Integration
-- 🔄 Session Management & Password Change
+- PHP 8.x recommended
+- MySQL or MariaDB
+- Apache through XAMPP, Laragon, or a similar local stack
 
-## 📁 Project Structure
+## Local setup with XAMPP
 
+1. Clone the project into XAMPP's `htdocs` directory:
+
+   ```powershell
+   cd C:\xampp\htdocs
+   git clone https://github.com/YSFWRLD/Blogorithm.git blogorithm
+   ```
+
+2. Start Apache and MySQL from the XAMPP control panel.
+3. Open `http://localhost/phpmyadmin`.
+4. Create a database named `blogorithm`.
+5. Import `blogorithm.sql` into that database.
+6. Confirm the local database settings in `includes/dbconnect.php`.
+7. Open `http://localhost/blogorithm`.
+
+The included SQL file contains sample posts and sample users with password
+hashes. Treat them as demonstration data and create new accounts for your own
+local environment.
+
+## Roles
+
+| Role | Capabilities |
+| --- | --- |
+| User | Register, sign in, change password, and manage blog posts |
+| Admin | Manage users and posts through the admin dashboard |
+
+## Project structure
+
+```text
+css/                  stylesheets
+images/               post and interface images
+includes/             database connection and shared layout
+js/                   browser-side JavaScript
+blogorithm.sql         schema and sample data
+index.php              public post listing
+post.php               individual post page
+dashboard.php          user dashboard
+admin_dashboard.php    administration area
 ```
-blogorithm/
-├── css/                # Custom stylesheets
-├── images/             # Post thumbnails and UI images
-├── includes/           # DB connection and layout includes
-├── js/                 # Custom JS
-├── *.php               # Main PHP pages
-└── blogorithm.sql      # MySQL database schema
-```
 
-## 🛠️ Installation
+## Security notes
 
-1. Clone the repository or copy the folder into `C:/xampp/htdocs/`
-2. Start Apache & MySQL from XAMPP
-3. Visit [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-4. Create a database named `blogorithm`
-5. Import `blogorithm.sql` into that database
-6. Open [http://localhost/blogorithm](http://localhost/blogorithm) in your browser
+This is an educational project, not a production-ready CMS. Before deploying it
+publicly:
 
-## 🧠 Technologies Used
+- Move database credentials out of source code and into environment variables.
+- Replace string-built SQL with prepared statements throughout the application.
+- Add CSRF protection to state-changing forms.
+- Validate uploaded files and generated image paths.
+- Add authorization checks to every administrative action.
+- Remove demonstration users and content from the database import.
+- Configure secure session cookies and production error handling.
 
-- PHP 7+
-- MySQL
-- HTML5
-- CSS3
-- JavaScript (vanilla)
-- XAMPP (Apache + MySQL stack)
+## Current limitations
 
-## 👥 Roles
+- No automated tests
+- No pagination or post search
+- Local database configuration is hard-coded for XAMPP defaults
+- The interface was designed as a learning project rather than a reusable theme
 
-- **Regular Users:** Can register, log in, and manage their posts
-- **Admin:** Full control over all users and posts
-
-## 📌 Future Improvements
-
-- Add hashed passwords for security
-- Integrate Bootstrap or Tailwind for responsive design
-- Add image upload validation
-- Include post pagination and search
-
-## 🤝 Contributing
-
-Feel free to fork the repository and open a pull request to contribute!
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-> Made with ❤️ by [YSFWRLD](https://github.com/YSFWRLD)
+No software license is currently included. Add one before granting others
+permission to reuse or redistribute the project.
